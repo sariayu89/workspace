@@ -1,32 +1,34 @@
 <?php
 class Building{
-    // properties
+ //properties    
     protected $name;
     protected $height;
-    
-    // cosntructor
-    function  __construct($name, $height){
+   
+    //constructor
+    function __construct($name,$height){
         $this->name = $name;
         $this->height = $height;
+       
     }
-    
-    // accessor method
+   
+    //accessor method
     function setName($name){
-        $this->name = $name;
+      $this->name = $name;  
     }
     function getName(){
         return $this->name;
     }
     function setHeight($height){
-        $this->height = $height;
+      $this->height = $height;  
     }
-    function setHeight($height){
+    function getHeight(){
         return $this->height;
     }
-    
-    function getProfile (){
-        $profile = "{$this->name} の高さは {$this->heigtht} ｍです。";
+   
+    function getProfile(){
+        $profile = "{$this->name}の高さは{$this->height}mです。 ";
         return $profile;
     }
+   
 }
 ?>
